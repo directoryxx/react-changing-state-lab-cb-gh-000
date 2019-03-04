@@ -44,6 +44,7 @@ export default class Game extends React.Component {
   }
 
   isComplete () {
+    return this.state.board.every((field) => field);
   }
 
   render () {
